@@ -22,14 +22,30 @@ time, mark, audio, video {
 /**
  * Start of Custom Styles
  */
-body {
+
+body, nav {
     /*background-color: LightGray;*/
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background-color: #fff;
 }
+
 div {
     /*border: 1px solid Chocolate;*/
 }
+
+li {
+    list-style-image: none;
+    list-style: none;
+    list-style-type: none;
+}
+
+ul {
+    list-style: none;
+    list-style-image: none;
+    list-style-type: none;
+}
+
 .content {
     padding: 0 0.938rem;
     margin: 0 auto;
@@ -37,51 +53,67 @@ div {
     min-width: 37.5rem;
     text-align: center;
 }
+
 :focus {
     outline: none;
 }
+
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
-/*Navigation Section */
-.top-navigation {
-    background-color: #fff;
+/*********************************************************************************
+ **************************Top Navigation Section*********************************
+ *********************************************************************************/
+nav {
     position: fixed;
     width: 100%;
     height: 4.43rem;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
 }
-.top-navigation > .content {
+
+nav > .content {
     height: 4.2rem;
 }
-.top-navigation .logo {
+
+nav .logo {
     margin-top: 1em;
     float: left;
 }
-.top-navigation .links {
+
+nav .links {
     float: right;
     color: #838994;
     font-size: 1.04rem;
     margin-top: 1.7rem;
 }
-.top-navigation .links li {
+
+nav .links li {
     display: inline-block;
     margin-left: 25px;
 }
-.top-navigation .links li.active {
+
+nav .links li.active {
     color: #4c5058;
     font-weight: 500;
 }
-.top-navigation .links li:hover {
+
+nav .links li:hover {
     cursor: pointer;
     color: #333333;
 }
-/*intro section*/
-.intro {
+
+nav img {
+    width: 1.5rem;
+}
+/*****************************************************************************************
+ *********************Introduction Ssection***********************************************
+ *****************************************************************************************/
+#intro {
     background-image: url(images/first-background-copy.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -89,30 +121,34 @@ html {
     height: 45.938rem;
     overflow: auto;
 }
-.intro h1,
-.intro h3 {
+
+#intro h1,
+#intro h3 {
     color: white;
     text-align: center;
     font-weight: 100;
 }
-h1 {
+
+#intro h1 {
     margin: 0.67rem 0;
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
 }
-.intro h1 {
-margin-top: 17.5rem;
-font-size: 3.125rem;
-}
-.intro h3 {
+
+#intro h3 {
     margin-top: 1.25rem;
     font-size: 1.563rem;
 }
-/*button section*/
-.intro .button {
+/**********************************************************************************
+ ******************************Button Section**************************************
+ **********************************************************************************/
+#intro .button {
     margin: 0 auto;
     color: white;
     text-align: center;
     margin-top: 1.563rem;
 }
+
 button {
     width: 9.688rem;
     font-size: 1.125rem;
@@ -124,61 +160,64 @@ button {
     border-color: #f15a29;
     color: white;
 }
-/*cases section*/
-/*cases section*/
-.cases {
-    background-color: #fff;
+/************************************************************************************
+ ********************************* Cases Section ************************************
+ ************************************************************************************/
+
+#cases {
     overflow: hidden;
     padding-bottom: 5rem;
 }
-.cases .content {
+
+#cases .content {
     margin-top: 7.875rem;
     padding: none;
     color: #1d1e21;
     text-align: center;
 
 }
-li {
-    list-style-image: none;
-    list-style: none;
-    list-style-type: none;
-}
-ul {
-    list-style: none;
-    list-style-image: none;
-    list-style-type: none;
-}
-.cases h2 {
+
+#cases h2 {
     font-size: 2.75rem;
     margin: 1.625rem 0rem 3.125rem;
     font-weight: 300;   
 }
+
 .caption {
     font-weight: 400;
     font-size: 1.563rem;
     margin: 2.5rem 0px 1.875rem;
 }
+
 .content .devices p {
     font-weight: 300;
     font-size:1.313rem;
 }
 
-.devises {
+#cases .devices {
     display: inline-block;
     width: 18rem;
 }
-/*footer section*/
-.social {
-    background-color: #fff;
+
+#cases img{
+    height: 127px;
+    width: 127px;
+}
+/********************************************************************************
+ *************************** Footer Section *************************************
+ ********************************************************************************/
+footer {
     overflow: auto;
     padding-bottom: 9.375rem;
 }
-.social hr {
+
+footer hr {
     border:0;
     border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
-.social .icons > li {
+
+footer .icons > li {
     border-radius: 1.25rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -188,19 +227,24 @@ ul {
     padding: 0.625rem 0;
     text-align: center;
 }
-.social .icons >li:hover {
+
+footer .icons >li:hover {
     cursor: pointer;
 }
-.social .twitter {
+
+footer .twitter {
     color: #55acee;
 }
-.social .facebook {
+
+footer .facebook {
     color: #4c66a4;
 }
-.social .instagram {
+
+footer .instagram {
     color: #3f729b;
 }
-.social .copy {
+
+footer .copy {
     font-size: 0.9rem;
     font-weight: 300;
     color: #838994;
