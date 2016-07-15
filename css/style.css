@@ -249,3 +249,20 @@ footer .copy {
     font-weight: 300;
     color: #838994;
 }
+
+/***************************************************************************
+ ***************** Responsiveness section **********************************
+ ***************************************************************************/
+
+ @media screen and (max-width: 956px) {
+    #cases .devices {
+        width: 30%;
+    }
+}
+
+ 
+ @media screen and (max-device-width: 500px) {
+    #cases .devices {
+        width: 30%
+    }
+ } 
